@@ -1,0 +1,306 @@
+@font-face {
+    font-family: IRANSans;
+    src: url('../../font/IRANSansWeb/IRANSansWeb.eot');
+
+    src: url('../../font/IRANSansWeb/IRANSansWeb.eot') format('embedded-opentype'), url('../../font/IRANSansWeb/IRANSansWeb(FaNum).woff') format('woff'), url('../../font/IRANSansWeb/IRANSansWeb.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: vazir-bold;
+
+    src: url('../../font/vazir/Vazir-Bold.eot');
+    src: url('../../font/vazir/Vazir-Blod.eot') format('embedded-opentype'), url('../../font/vazir/Vazir-Bold-FD.woff') format('woff'), url('../../font/vazir/Vazir-Bold.ttf') format('truetype');
+
+    font-weight: 400;
+    font-style: normal
+}
+
+html body .bg-light {
+    background-color: #f4f8fa !important;
+}
+
+.vip-section {
+    font-family: IRANSans, sans-serif !important;
+    direction: rtl;
+    font-size: 14px;
+}
+
+.vip-section h1, .vip-section h2, .vip-section h3, .vip-section h4, .vip-section h5, .vip-section h6 {
+    font-family: 'vazir-bold', sans-serif !important;
+}
+
+.page-title {
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.page-title .breadcrumb-title {
+
+    margin: 0;
+}
+
+.page-title .breadcrumb {
+    box-shadow: none;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg--dark .packages_wrapping {
+    background: none;
+    color: #fff;
+}
+
+/*------------ pricing Box ----------------*/
+.packages_wrapping {
+    text-align: center;
+    width: 100%;
+    background: rgba(249, 93, 2, 0.001);
+    border-radius: 1rem;
+    margin-bottom: 25px;
+    position: relative;
+    border: 1px solid rgba(249, 93, 2, 0.2);
+}
+
+.packages_headers {
+    padding: 3em 0 2em;
+    width: 100%;
+}
+
+.packages_headers i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    display: table;
+    margin: 0 auto 0.2em auto;
+    color: #4c5f98;
+}
+
+.packages_headers .packages_pr_title {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.packages_headers .packages_price-subtitle {
+    font-style: italic;
+    font-size: 14px;
+    color: #4d5868;
+}
+
+.packages_price {
+    position: relative;
+    display: table;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.pr-value {
+    font-size: 3em;
+    position: relative;
+}
+
+.recommended .pr-value {
+    color: #fd5332;
+}
+
+.pr-value:before {
+    content: "ت";
+    position: absolute;
+    font-size: 2rem;
+    top: -20px;
+    left: -34px;
+    color: #a6b0d0;
+}
+
+.packages_middlebody ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.packages_middlebody ul li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.packages_bottombody {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.packages_bottombody .btn-pricing {
+    position: relative;
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px 50px;
+    background: #da0b4e;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    transition: all ease 0.4s;
+    width: 80%;
+    cursor: pointer;
+}
+
+.packages_bottombody .btn-pricing:hover, .packages_bottombody .btn-pricing:focus {
+    background: #fc5231;
+    color: #ffffff !important;
+}
+
+.packages_wrapping.recommended {
+    background: #da0b4e;
+}
+
+.recommended .packages_headers i {
+    color: #ffffff;
+}
+
+.recommended .packages_headers .packages_pr_title {
+    color: #ffffff;
+}
+
+.recommended .packages_headers .packages_price-subtitle {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.recommended .pr-value {
+    color: #ffffff !important;
+}
+
+.recommended .pr-value:before {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.packages_wrapping.recommended .packages_middlebody ul li {
+    color: #ffffff;
+}
+
+.recommended .packages_bottombody .btn-pricing {
+    background: #ffffff !important;
+    color: #D70040 !important;
+}
+
+/*checkout page style*/
+.checkout-container {
+    font-family: IRANSans, sans-serif !important;
+    width: 100%;
+    min-height: 100%;
+    background: #1a2b4a;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkout-wrapper {
+
+    direction: rtl;
+    width: 500px;
+    background: #EFEFEF;
+    margin: 200px auto;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 4px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.checkout-wrapper .checkout-title {
+    font-family: 'vazir-bold', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #4c5f98;
+}
+
+.order-details {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.checkout-wrapper table {
+    width: 90%;
+    border-collapse: separate !important;
+
+}
+
+.order-number, .order-date, .order-total {
+    text-align: left;
+    border-collapse: separate !important;
+    width: 75%;
+    background-color: #f4f8fa;
+    padding: 5px 13px;
+    border-radius: 5px;
+    color: #4c5f98;
+}
+
+.order-number span, .order-date span, .order-total span {
+
+    /*direction: rtl;*/
+}
+
+.payment {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.btn-payment {
+    width: 100%;
+    background: #008000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn-payment:hover {
+    background: #007200;
+}
+
+
+@media (min-width: 1024px) {
+    .page-title .breadcrumb-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page_title {
+        min-height: 300px;
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-title .breadcrumb-title {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .checkout-wrapper {
+        width: 90%;
+    }
+}
+
+
+
+
