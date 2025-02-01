@@ -28,8 +28,8 @@ function wp_vip_layout()
                                 <div class="packages_headers">
 
                                     <img class="mb-4" src="<?php echo VIP_PLUGIN_URL.'assets/img/' . ($item->recommended == 1 ? 'layers-white.svg' : 'layers.svg') ?>" alt="icon">
-                                    <h4 class="packages_pr_title"><?php echo helper::planType($item->type); ?></h4>
-                                    <span class="packages_price-subtitle">با <?php echo helper::planType($item->type); ?> شروع کنید!</span>
+                                    <h4 class="packages_pr_title">پکیج <?php echo helper::planType($item->type); ?></h4>
+                                    <span class="packages_price-subtitle">با پکیج <?php echo helper::planType($item->type); ?> شروع کنید!</span>
                                 </div>
                                 <div class="packages_price">
                                     <h4 class="pr-value"><?php echo Helper::dropZero($item->price); ?></h4>
@@ -41,10 +41,10 @@ function wp_vip_layout()
                                 </div>
                                 <div class="packages_bottombody">
 
-                                    <form action="<?php echo site_url('vip-checkout')?>" method="post">
-                                        <input type="submit" value="عضویت" name="plan-id" class="btn-pricing">
-                                        <input type="hidden" name="plan_btn" value="<?php echo $item->id; ?>">
-                                        <?php wp_nonce_field('vip-checkout'); ?>
+                                    <form action="<?php echo site_url('gateway')?>" method="post">
+                                        <input type="submit" value="عضویت" name="plan_btn" class="btn-pricing">
+                                        <input type="hidden" name="plan_id" value="<?php echo $item->id; ?>">
+                                        <?php wp_nonce_field(); ?>
                                     </form>
                                 </div>
 

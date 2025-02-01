@@ -1,3 +1,74 @@
-/*body{*/
-/*    background: #d6e9c6;*/
-/*}*/
+@font-face {
+    font-family: IRANSans;
+    src: url('../../font/IRANSansWeb/IRANSansWeb.eot');
+
+    src: url('../../font/IRANSansWeb/IRANSansWeb.eot') format('embedded-opentype'), url('../../font/IRANSansWeb/IRANSansWeb(FaNum).woff') format('woff'), url('../../font/IRANSansWeb/IRANSansWeb.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: vazir-bold;
+
+    src: url('../../font/vazir/Vazir-Bold.eot');
+    src: url('../../font/vazir/Vazir-Blod.eot') format('embedded-opentype'), url('../../font/vazir/Vazir-Bold-FD.woff') format('woff'), url('../../font/vazir/Vazir-Bold.ttf') format('truetype');
+
+    font-weight: 400;
+    font-style: normal
+}
+
+.vip-user-list-container ,.delete-modal-wrapper, .vip-font, .add-modal-wrapper{
+    font-family: "IRANSans", "Vazirmatn", Tahoma, Arial, sans-serif !important; ;
+}
+.vip-user-list-container h1, .vip-user-list-container h2, .vip-user-list-container h3, .vip-user-list-container h4, .vip-user-list-container h5, .vip-user-list-container h6 , .delete-modal-wrapper h2 , .add-modal-wrapper h2{
+    font-family: "vazir-bold", Tahoma, Arial, sans-serif !important;
+}
+.vip-font h1, .vip-font h2, .vip-font h3, .vip-font h4, .vip-font h5, .vip-font h6 , .vip-font h2{
+    font-family: "vazir-bold", Tahoma, Arial, sans-serif !important;
+}
+
+/*user delete and add modal */
+
+
+.delete-modal-wrapper .delete-modal-body, .add-modal-wrapper .add-modal-body {
+    color: #4d5868;
+    background: #EFEFEF;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 4px 14px;
+
+}
+.add-modal-wrapper input {
+    font-size: 14px;
+    width: 100%!important;
+}
+
+ .delete-title, .add-title {
+    font-family: 'vazir-bold', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #4c5f98;
+}
+
+.user-details {
+    margin: 20px 0;
+    font-size: 14px;
+    width: 100%;
+    border-collapse: separate !important;
+}
+
+
+.detail-item {
+    text-align: left;
+    border-collapse: separate !important;
+    width: 75%;
+    background-color: #f4f8fa;
+    padding: 5px 13px;
+    border-radius: 5px;
+    color: #4c5f98;
+}
+jdp-container {
+    z-index: 10000!important;
+}

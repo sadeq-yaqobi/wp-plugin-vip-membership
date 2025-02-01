@@ -26,13 +26,13 @@ class Helper
     {
         switch ($type) {
             case 1:
-                return 'پکیج پایه';
+                return 'پایه';
                 break;
             case 2:
-                return 'پکیج نقره‌ای';
+                return 'نقره‌ای';
                 break;
             case 3:
-                return 'پکیج طلایی';
+                return 'طلایی';
                 break;
         }
     }
@@ -53,4 +53,53 @@ class Helper
         return $html;
     }
 
+    public static function orderNumber(): string
+    {
+        return tr_num(jdate('ymd'), 'en') . rand(10000, 99999);
+    }
+
+    public static function vipStatus($status)
+    {
+        switch ($status) {
+            case 0:
+                return '<span class="uk-label uk-label-danger ">غیر فعال</span>';
+                break;
+            case 1:
+
+                return '<span class="uk-label uk-label-success">فعال</span>';
+                break;
+        }
+    }
+
+    public static function toJalali($date, $current_separator, $output_separator = '/')
+    {
+        if (empty($date)) return 'تاریخی ثبت نشده است';
+
+        $date = explode($current_separator, $date);
+        $year = $date[0];
+        $month = $date[1];
+        $day = $date[2];
+        return gregorian_to_jalali($year, $month, $day, $output_separator);
+
+    }
+
+    public static function toGregorian($date, $current_separator, $output_separator = '-')
+    {
+        if (empty($date)) return 'تاریخی ثبت نشده است';
+
+        $date = explode($current_separator, $date);
+        $year = $date[0];
+        $month = $date[1];
+        $day = $date[2];
+        return jalali_to_gregorian($year, $month, $day, $output_separator);
+
+    }
+
+    public static function calculateRemainingCredit($expiration_date): string
+    {
+        $current_date = strtotime(date('Y-m-d'));
+        $expiration_date = strtotime($expiration_date);
+        $remaining_time= round($expiration_date - $current_date) / (60 * 60 * 24);
+        return $remaining_time >= 0 ? $remaining_time . ' روز' : '0';
+    }
 }

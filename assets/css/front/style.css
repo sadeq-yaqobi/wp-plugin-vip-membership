@@ -19,7 +19,15 @@
 
 html body .bg-light {
     background-color: #f4f8fa !important;
+    color: #4d5868 !important;
+
 }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .vip-section {
     font-family: IRANSans, sans-serif !important;
@@ -193,22 +201,23 @@ html body .bg-light {
 }
 
 /*checkout page style*/
-.checkout-container {
+.checkout-container, .pay-result-container {
     font-family: IRANSans, sans-serif !important;
     width: 100%;
     min-height: 100%;
     background: #1a2b4a;
-    padding:10px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.checkout-wrapper {
+
+.checkout-wrapper, .pay-result-wrapper {
 
     direction: rtl;
     width: 500px;
     background: #EFEFEF;
-    margin: 200px auto;
+    margin: 20vh auto;
     padding: 20px 20px;
     border-radius: 5px;
     font-size: 18px;
@@ -220,7 +229,11 @@ html body .bg-light {
 
 }
 
-.checkout-wrapper .checkout-title {
+.pay-result-wrapper {
+    padding: 20px 20px 5px 10px;
+}
+
+.checkout-wrapper .checkout-title, .pay-result-wrapper .pay-resul-title {
     font-family: 'vazir-bold', sans-serif;
     text-align: center;
     font-size: 22px;
@@ -229,12 +242,24 @@ html body .bg-light {
     color: #4c5f98;
 }
 
+.pay-result-wrapper .pay-resul-title {
+    color: #008000;
+    margin: 10px 0;
+}
+
+.pay-result-wrapper .thanks-msg {
+    font-size: 14px;
+    color: #4d5868;
+
+}
+
+
 .order-details {
     margin: 20px 0;
     font-size: 14px;
 }
 
-.checkout-wrapper table {
+.checkout-wrapper table, .pay-result-wrapper table {
     width: 90%;
     border-collapse: separate !important;
 
@@ -274,6 +299,95 @@ html body .bg-light {
 
 .btn-payment:hover {
     background: #007200;
+}
+
+.go-home {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.go-home-link {
+    font-size: 12px;
+    color: #4c5f98 !important;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.go-home-link:hover {
+    color: #D70040 !important;
+}
+
+
+/*vip content display part*/
+.vip-content-container {
+    position: relative;
+    display: inline;
+}
+.vip-excerpt {
+    display: inline;
+}
+.vip-blur-overlay {
+    position: relative;
+    display: inline;
+}
+
+.blur-content {
+    display: inline;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    user-select: none;
+    -webkit-user-select: none;
+    opacity: 0.7;
+
+}
+
+.premium-message {
+    color: #4d5868;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    text-align: center;
+    background: #EFEFEF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /*max-width: 500px;*/
+    z-index: 10;
+}
+
+.premium-message h3 {
+    margin-bottom: 1rem;
+    color: #4c5f98;
+}
+
+.premium-button {
+    display: inline-block;
+    background: #008000 !important;
+    color: #ffffff !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.premium-button:hover {
+    background: #007200 !important;
+}
+
+/* Create gradient overlay at the bottom */
+.vip-blur-overlay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(transparent, white);
+    pointer-events: none;
 }
 
 
